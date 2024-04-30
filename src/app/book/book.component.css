@@ -1,0 +1,6 @@
+.bookCard {
+  border: 1px solid rgb(144, 47, 214);
+  border-radius: 10px;
+  padding: 0px 20px;
+  width: 300px;
+}

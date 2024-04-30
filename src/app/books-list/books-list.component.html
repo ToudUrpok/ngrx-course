@@ -1,0 +1,17 @@
+<div class="booksList">
+  @for (book of books; track book.id) {
+    <div class="item">
+      <app-book [book]="book" />
+      @if (isCollectMode) {
+        <button
+          (click)="add.emit(book.id)"
+        >Collect</button>
+      } @else {
+        <button
+          (click)="remove.emit(book.id)"
+        >Remove</button>
+      }
+
+    </div>
+  }
+</div>

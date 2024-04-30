@@ -1,1 +1,7 @@
 <app-counter></app-counter>
+
+<h2>Books</h2>
+<app-books-list class="booksList" [books]="(books$ | async)!" (add)="onAdd($event)" />
+
+<h2>Collected Books</h2>
+<app-books-list class="bookCollection" [isCollectMode]="false" [books]="(collectedBooks$ | async)!" (remove)="onRemove($event)" />
